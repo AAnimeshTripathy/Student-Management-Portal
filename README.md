@@ -65,8 +65,8 @@ Images are from [Unsplash](https://unsplash.com)
    ```
 
 3. **Clone this project**
-   ```sh
-   $  git clone https://github.com/jobic10/student-management-using-django.git
+   ```
+   $  git clone https://github.com/AAnimeshTripathy/Student-Management-Portal.git
    ```
 
    Then, Enter the project
