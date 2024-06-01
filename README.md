@@ -9,6 +9,7 @@ Currently working on REST APIs to provide data to other systems like library man
 
 ## Passport/Images
 Images are from [Unsplash](https://unsplash.com)
+
 ## Features of this Project
 
 ### A. Capabilities for Admin Users
@@ -49,32 +50,32 @@ Images are from [Unsplash](https://unsplash.com)
 2. **Create a Virtual Environment and Activate**
 
    Install Virtual Environment First
-   ```
+   ```sh
    $  pip install virtualenv
    ```
 
    Create Virtual Environment
-   ```
+   ```sh
    $  python -m venv venv
    ```
 
    Activate Virtual Environment
-   ```
+   ```sh
    $  source venv/bin/activate
    ```
 
 3. **Clone this project**
-   ```
+   ```sh
    $  git clone https://github.com/jobic10/student-management-using-django.git
    ```
 
    Then, Enter the project
-   ```
+   ```sh
    $  cd student-management-using-django
    ```
 
 4. **Install Requirements from 'requirements.txt'**
-   ```python
+   ```sh
    $  pip3 install -r requirements.txt
    ```
 
@@ -86,18 +87,41 @@ Images are from [Unsplash](https://unsplash.com)
    ```
 
 6. **Run Server**
-
-   ```
+   ```sh
    $ python manage.py runserver
    ```
 
 7. **Login Credentials**
 
    Create Super User (HOD)
-   ```
+   ```sh
    $  python manage.py createsuperuser
    ```
 
    Then Add Email and Password
 
+## Screenshots
 
+### Admin Dashboard
+
+#### Dark Mode
+![Admin Dark](screenshots/admin_dark.png)
+
+#### Light Mode
+![Admin Light](screenshots/admin_light.png)
+
+### Staff Dashboard
+
+#### Dark Mode
+![Staff Dark](screenshots/staff_dark.png)
+
+#### Light Mode
+![Staff Light](screenshots/staff_light.png)
+
+### Student Dashboard
+
+#### Dark Mode
+![Student Dark](screenshots/student_dark.png)
+
+#### Light Mode
+![Student Light](screenshots/student_light.png)

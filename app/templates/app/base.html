@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Student Management System</title>
+    <title>IITP - Moodle</title>
+    <link rel="icon" href="{% static 'IITP_logo.svg.png' %}" type="image/x-icon">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -43,6 +44,9 @@
         .dark-mode .main-header .nav-link {
             color: #000000;
         }
+        .navigationbar {
+            color: white;
+        }
     </style>
     {% block custom_css %}
 
@@ -51,7 +55,6 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
@@ -60,6 +63,10 @@
                     <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                 </li>
             </ul>
+            <div>
+                <h2 class="hindi">भारतीय प्रौद्योगिकी संस्थान पटना</h1>
+                <h2>Indian Institute of Technology Patna</h1>
+            </div>
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
                 <!-- Dark/Light Mode Toggle -->
