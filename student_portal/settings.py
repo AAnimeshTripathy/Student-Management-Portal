@@ -59,6 +59,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # My Middleware
+    'app.middleware.LoginCheckMiddleWare',
 ]
 
 ROOT_URLCONF = 'student_portal.urls'
@@ -150,6 +153,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 TIME_ZONE = 'Asia/Kolkata'
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+AUTH_USER_MODEL = 'app.CustomUser'
+AUTHENTICATION_BACKENDS = ['app.EmailBackend.EmailBackend']
 
 # Email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -158,3 +164,6 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = os.environ.get('EMAIL_ADDRESS') 
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 EMAIL_USE_TLS = True
+
+# prod_db = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(prod_db)
