@@ -10,8 +10,6 @@ Currently working on REST APIs to provide data to other systems like library man
 ## Passport/Images
 Images are from [Unsplash](https://unsplash.com)
 
-## Features of this Project
-
 ### A. Capabilities for Admin Users
 1. Access comprehensive summary charts showcasing student performance, staff performance, course statistics, subject details, leave records, and more.
 2. Handle staff management tasks, including adding, updating, and removing staff members.
@@ -22,6 +20,8 @@ Images are from [Unsplash](https://unsplash.com)
 7. Monitor student attendance records.
 8. Review and respond to feedback from students and staff.
 9. Approve or reject leave applications submitted by students and staff.
+10. **API Permissions**: Full access to all APIs for CRUD operations on all resources.
+11. **Access Details**: Admin users have unrestricted access to all features and data within the system.
 
 ### B. Capabilities for Staff/Teachers
 1. Access summary charts that provide insights into their students' performance, subjects, and leave status.
@@ -29,6 +29,8 @@ Images are from [Unsplash](https://unsplash.com)
 3. Enter and modify student results.
 4. Submit leave applications.
 5. Send feedback to the Head of Department (HOD).
+6. **API Permissions**: CRUD operations on student data via APIs. Read-only access to other APIs.
+7. **Access Details**: Staff members can manage student-related data and have limited access to other features and data.
 
 ### C. Capabilities for Students
 1. View summary charts related to their attendance, subjects, and leave status.
@@ -36,6 +38,14 @@ Images are from [Unsplash](https://unsplash.com)
 3. Access their academic results.
 4. Apply for leave.
 5. Send feedback to the Head of Department (HOD).
+6. **API Permissions**: Read-only access to their own data via APIs.
+7. **Access Details**: Students can view their own data and interact with limited features within the system.
+
+### Future Scope: Full-Fledged College Management Portal
+1. **Integration with Financial Systems**: Incorporate functionalities for fee management, scholarship tracking, and financial aid distribution.
+2. **Alumni Management**: Develop features for alumni engagement, networking, and donation management.
+3. **Event Management**: Add capabilities for event planning, scheduling, and registration for academic and extracurricular activities.
+4. **Placement Cell**: Introduce modules for managing campus placements, career counseling, and internship opportunities.
 
 ## How to Install and Run this project?
 
@@ -101,6 +111,20 @@ Images are from [Unsplash](https://unsplash.com)
    Then Add Email and Password
 
 ## Screenshots
+
+### APIs
+
+#### List of APIs
+![APIs List](screenshots/Apis_list.png)
+
+#### Hostel Management APIs
+![Hostel APIs](screenshots/Hostel_apis.png)
+
+#### Library Management APIs
+![Library APIs](screenshots/Library_apis.png)
+
+#### No Dues Management APIs
+![No-Dues APIs](screenshots/No-Dues_apis.png)
 
 ### Admin Dashboard
 

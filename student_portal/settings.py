@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Third Party Apps
+    'rest_framework',
+    
     # My apps
     'app.apps.AppConfig',
     'api.apps.ApiConfig', # for apis
@@ -167,3 +170,5 @@ EMAIL_USE_TLS = True
 
 # prod_db = dj_database_url.config(conn_max_age=500)
 # DATABASES['default'].update(prod_db)
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
